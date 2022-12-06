@@ -1,0 +1,13 @@
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
