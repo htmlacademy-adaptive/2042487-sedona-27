@@ -1,0 +1,119 @@
+.card {
+  font-family: inherit;
+  padding: 26px 18px 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 33.33%;
+    padding: 42px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 42px;
+    min-height: 256px;
+  }
+
+  &--primary {
+    padding: 39px 20px 38px;
+    color: $color-text-secondary;
+
+    @media (min-width: $tablet-width) {
+      padding: 42px 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 52px;
+    }
+  }
+}
+
+.advantages__item--secondary .card {
+  padding-bottom: 35px;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.card__title br {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 auto;
+  max-width: 290px;
+}
+
+.advantages__item--third .card__description {
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--third .card__description {
+    max-width: 178px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 290px;
+    }
+  }
+}
+
+.card__description br {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__item--secondary .card__description {
+  max-width: 240px;
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+  }
+
+  & br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+}
+
+.card__numeration {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  padding: 28px 18px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 36px 60px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 120px;
+  }
+}
+
+.footer__link {
+  font-family: inherit;
+  text-decoration: none;
+  color: $color-text-basic;
+
+  &--twitter {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &--copyright {
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.link__title {
+  align-self: center;
+  text-transform: uppercase;
+}

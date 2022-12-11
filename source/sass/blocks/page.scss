@@ -1,7 +1,7 @@
 .page {
   background-color: $color-bg-page;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: $color-text-base;
+  color: $color-text-basic;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -13,7 +13,7 @@
 }
 
 .page__container {
-  background-color: $color-bg-base;
+  background-color: $color-bg-basic;
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;

@@ -1,7 +1,8 @@
 .hero {
   background-color: $color-bg-img;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position-x: center;
+  background-position-y: bottom;
   position: relative;
 
   &--main {
