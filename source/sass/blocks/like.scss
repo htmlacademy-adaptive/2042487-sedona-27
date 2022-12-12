@@ -1,0 +1,26 @@
+.like {
+  display: flex;
+  gap: 14px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+}
+
+.like__button {
+  padding: 0;
+  background-color: transparent;
+  color: rgba($color-text-basic, 0.3);
+
+  @media (min-width: $desktop-width) {
+    color: $color-text-secondary;
+  }
+}
+
+.like__counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  align-self: center;
+}
