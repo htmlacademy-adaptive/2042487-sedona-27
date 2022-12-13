@@ -1,0 +1,259 @@
+.fieldset {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 -20px;
+    padding: 24px 20px 34px;
+
+    &--user {
+      padding-bottom: 41px;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+
+  &--impression {
+    padding-bottom: 0;
+  }
+
+  &--poi {
+    padding-bottom: 0;
+  }
+
+  &--textarea {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 100%;
+
+    &--impression {
+      margin-bottom: 57px;
+    }
+
+    &--poi {
+      margin-bottom: 53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--impression {
+      margin-bottom: 82px;
+    }
+
+    &--poi {
+      margin-bottom: 96px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper .fieldset {
+    padding-bottom: 15px;
+  }
+
+  .form__wrapper .fieldset:nth-child(odd)::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: $color-divider;
+    position: absolute;
+    right: -44px;
+    top: 0;
+
+    @media (min-width: $desktop-width) {
+      right: -64px;
+    }
+  }
+}
+
+.fieldset__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &--input .fieldset__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &--control {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      row-gap: 36px;
+      column-gap: 12px;
+      padding: 0 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0;
+      margin: 0 -32px;
+    }
+  }
+}
+
+.fieldset--poi.fieldset__list {
+  @media (min-width: $tablet-width) {
+    column-gap: 0;
+    padding: 0 50px 0 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.fieldset__list--control .fieldset__item {
+  max-width: 280px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 32px;
+    max-width: 33.33%;
+  }
+}
+
+.fieldset--poi.fieldset__item {
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+  }
+}
+
+.fieldset__legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 21px;
+
+    &--divider {
+      position: relative;
+    }
+
+    &--divider::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $color-divider;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+    }
+
+    &--divider .fieldset__legend-text {
+      max-width: 400px;
+      position: relative;
+      background-color: $color-bg-basic;
+      padding: 0 60px;
+      display: inline-block;
+      z-index: 2;
+    }
+  }
+
+  &--control {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 56px;
+    }
+  }
+
+  &--size-l {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 71px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      margin-left: -36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -64px;
+    }
+  }
+
+  &--full-name {
+    @media (min-width: $tablet-width) {
+      margin-left: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 57px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__wrapper .fieldset:last-child::after {
+    display: none;
+  }
+}
+
+.fieldset__textarea {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: 0;
+  background-color: $color-input;
+  color: $color-text-basic;
+  margin: 0 auto 56px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  height: 150px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 48px;
+    max-width: 768px;
+    height: 160px;
+  }
+
+  &::placeholder {
+    color: $color-text-placeholder;
+  }
+}
