@@ -1,0 +1,29 @@
+.photo-card {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 24px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.photo-card__image {
+  display: block;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 267px;
+  }
+}
+
+.photo__item--top .photo-card__image {
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+  }
+}

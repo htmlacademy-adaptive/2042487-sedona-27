@@ -1,0 +1,26 @@
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 8px;
+  }
+}
+
+.social-list__link {
+  background-color: $color-basic;
+  color: $color-bg-basic;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+.main__header {
+  padding: 0 18px;
+  text-align: center;
+}
+
+.main-__header .section__title {
+  margin-bottom: 30px;
+  line-height: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 26px;
+  }
+}

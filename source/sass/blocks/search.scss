@@ -1,0 +1,36 @@
+.search {
+  padding: 38px 18px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 60px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 121px 66px;
+  }
+}
+
+.search .section__title {
+  margin-bottom: 28px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.search__button {
+  padding: 16px 20px;
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 458px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+  }
+}

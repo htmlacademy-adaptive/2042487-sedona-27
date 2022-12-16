@@ -1,0 +1,28 @@
+.feedback__header {
+  padding: 36px 20px 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 111px 120px 0;
+  }
+}
+
+.feedback__header .section__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback__header br {
+    display: none;
+  }
+}
