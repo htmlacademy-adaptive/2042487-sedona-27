@@ -7,24 +7,24 @@
 
 .nav__wrapper {
   position: absolute;
-  width: 100%;
+  z-index: 2;
   top: 0;
   left: 0;
-  z-index: 2;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
+  .nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   .nav__list > :nth-child(3) {
     grid-column: 4;
   }
 
   .nav__list > :nth-child(7) {
     grid-column: 4;
-  }
-
-  .nav__list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
   }
 }
 

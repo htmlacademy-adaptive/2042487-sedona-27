@@ -70,9 +70,11 @@
                   Седона не&nbsp;аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="./img/photo-city.jpg" alt="Фото городка в зелени." class="card__photo">
-              </div>
+              <picture class="advantages__image-wrapper">
+                <source  media="(min-width: 1200px)" srcset="./img/photo-city-desktop.jpg">
+                <source  media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg">
+                <img class="advantages__image" src="./img/photo-city.jpg" alt="Фото городка в зелени.">
+              </picture>
               <ul class="advantages__sublist sublist">
                 <li class="sublist__item  sublist__item--house">
                   <h4 class="sublist__title">
@@ -87,7 +89,7 @@
                     Еда
                   </h4>
                   <p class="sublist__description">
-                    Всегда заказывайте топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+                    Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
                   </p>
                 </li>
                 <li class="sublist__item  sublist__item--souvenir">
@@ -109,12 +111,14 @@
                   — №2 —
                 </p>
                 <p class="card__description">
-                  Да, по&nbsp;нему можно пройти!<br />&nbsp;Если вы осмелитесь, конечно
+                  Да, по&nbsp;нему можно пройти!<br>&nbsp;Если вы осмелитесь, конечно
                 </p>
               </div>
-              <div class="advantages__image-wrapper">
-                <img class="advantages__image" src="./img/photo-bridge.jpg" alt="Мост дьявола." class="advantage__photo">
-              </div>
+              <picture class="advantages__image-wrapper">
+                <source  media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop.jpg">
+                <source  media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg">
+                <img class="advantages__image" src="./img/photo-bridge.jpg" alt="Мост дьявола.">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--third">
               <div class="advantage__wrapper card">
