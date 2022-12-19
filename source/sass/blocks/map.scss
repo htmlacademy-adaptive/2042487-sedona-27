@@ -1,6 +1,16 @@
-.map__image {
+.map {
+  background-image: url(../../img/map.jpg);
+  max-height: 350px;
+  width: 100%;
   display: block;
   object-fit: cover;
   object-position: center;
   max-width: 100%;
+}
+
+.map__iframe {
+  width: 100%;
+  max-height: 350px;
+  display: block;
+  border: 0;
 }
