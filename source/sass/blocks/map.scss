@@ -1,5 +1,5 @@
 .map {
-  background-image: url(../../img/catalog/video-presentation-bg-mobile@1x.jpg);
+  background-image: url("../../img/catalog/video-presentation-bg-mobile@1x.jpg");
   max-height: 350px;
   width: 100%;
   max-width: 100%;
@@ -8,7 +8,7 @@
   object-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/catalog/video-presentation-bg-mobile@2x.jpg);
+    background-image: url("../../img/catalog/video-presentation-bg-mobile@2x.jpg");
   }
 }
 
