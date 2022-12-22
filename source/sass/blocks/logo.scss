@@ -4,9 +4,9 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 50%;
-    margin-bottom: 0;
-    transform: translateX(-50%);
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
   }
 }

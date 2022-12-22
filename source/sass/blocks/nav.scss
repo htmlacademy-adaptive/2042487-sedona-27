@@ -20,11 +20,11 @@
   }
 
   .nav__list > :nth-child(3) {
-    grid-column: 4;
+    grid-column-start: 4;
   }
 
   .nav__list > :nth-child(7) {
-    grid-column: 4;
+    grid-column-start: 4;
   }
 }
 
