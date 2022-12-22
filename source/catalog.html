@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Фото и видео</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -75,7 +75,9 @@
                   <div class="info__like like">
                       <button class="like__button button" type="button">
                         <span class="visually-hidden">Мне нравится</span>
-                        <svg width="22" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/></svg>
+                        <svg width="22" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"/>
+                        </svg>
                       </button>
                       <span class="like__counter">1350</span>
                   </div>
@@ -84,7 +86,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo1-desktop@1x.jpg 1x, ./img/catalog/catalog-photo1-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo1-tablet@1x.jpg 1x, ./img/catalog/catalog-photo1-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" src="./img/catalog/catalog-photo1-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo1-mobile@2x.jpg 2x" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" src="./img/catalog/catalog-photo1-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне.">
                   </picture>
                 </a>
               </div>
@@ -109,7 +111,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo2-desktop@1x.jpg 1x, ./img/catalog/catalog-photo2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo2-tablet@1x.jpg 1x, ./img/catalog/catalog-photo2-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Цветищий кактус." src="./img/catalog/catalog-photo2-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo2-mobile@2x.jpg 2x" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Цветищий кактус." src="./img/catalog/catalog-photo2-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo2-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
                   </picture>
                 </a>
               </div>
@@ -134,7 +136,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo3-desktop@1x.jpg 1x, ./img/catalog/catalog-photo3-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo3-tablet@1x.jpg 1x, ./img/catalog/catalog-photo3-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Дорога в горах." src="./img/catalog/catalog-photo3-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo3-mobile@2x.jpg 2x" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Дорога в горах." src="./img/catalog/catalog-photo3-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo3-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
                   </picture>
                 </a>
               </div>
@@ -159,7 +161,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo4-desktop@1x.jpg 1x, ./img/catalog/catalog-photo4-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo4-tablet@1x.jpg 1x, ./img/catalog/catalog-photo4-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Мост дьявола." src="./img/catalog/catalog-photo4-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo4-mobile@2x.jpg 2x" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Мост дьявола." src="./img/catalog/catalog-photo4-mobile@1x.jpg" srcset="./img/catalog/catalog-photo4-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
                   </picture>
                 </a>
               </div>
