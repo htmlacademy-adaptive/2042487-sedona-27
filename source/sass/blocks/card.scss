@@ -6,30 +6,26 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
-    padding: 42px 32px;
+    padding: 52px 32px 29px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 43px 42px;
+    padding: 63px 50px 41px;
     min-height: 256px;
   }
 
   &--primary {
-    padding: 39px 20px 38px;
+    padding: 38px 20px 37px;
     color: $color-text-secondary;
 
     @media (min-width: $tablet-width) {
-      padding: 42px 32px;
+      padding: 52px 32px 31px 32px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 50px 52px;
+      padding: 52px 51px 50px 50px;
     }
   }
-}
-
-.advantages__item--secondary .card {
-  padding-bottom: 35px;
 }
 
 .card__title {
@@ -115,5 +111,17 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
+  }
+}
+
+.card--up {
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 41px;
   }
 }

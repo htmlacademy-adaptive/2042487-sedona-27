@@ -41,7 +41,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: 57px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -54,18 +54,36 @@
     padding: 158px 32px 61px;
   }
 
+  .sublist__item--souvenir {
+    padding: 153px 33px 64px;
+  }
+
   .sublist__item--souvenir br {
     display: none;
+  }
+
+  .sublist__item--souvenir::before {
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .sublist__item {
-    padding-bottom: 83px;
+    padding: 170px 32px 71px;
   }
 
   .sublist__item--souvenir br {
     display: inline;
+  }
+
+  .sublist__item::before {
+    width: 80px;
+    height: 80px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

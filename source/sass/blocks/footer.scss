@@ -1,5 +1,5 @@
 .footer {
-  padding: 28px 18px 23px;
+  padding: 39px 18px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,10 @@
     line-height: 21px;
     display: flex;
     gap: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 17px 0 -21px;
+    }
   }
 }
 
