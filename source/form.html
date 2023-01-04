@@ -215,7 +215,38 @@
             <span class="form__note">* — обязательные поля</span>
         </form>
       </main>
-
+      <div class="modal-container modal-container--failure">
+        <div class="modal-container__modal modal modal--failure">
+          <section class="modal__content">
+            <h2 class="modal__title">
+              Что-то пошло не&nbsp;так!
+            </h2>
+            <p class="modal__description">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+          </section>
+          <button class="modal__button button">
+              Ok
+          </button>
+        </div>
+      </div>
+      <div class="modal-container modal-container--success modal-container--close">
+        <div class="modal-container__modal modal modal--success">
+          <section class="modal__content modal__content--success">
+            <h2 class="modal__title">
+              Ваш отзыв отправлен!
+            </h2>
+            <p class="modal__description">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам в&nbsp;ближайшее время мы опубликуем его на сайте.
+            </p>
+          </section>
+          <div class="modal__button-wrapper">
+            <button class="modal__button modal__button--close button">
+                  Закрыть окно
+            </button>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <a class="footer__link footer__link--twitter" href="https://twitter.com/hashtag/visitsedona" target="_blank">
           #visitsedona
