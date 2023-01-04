@@ -17,4 +17,7 @@
   max-height: 350px;
   display: block;
   border: 0;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
 }

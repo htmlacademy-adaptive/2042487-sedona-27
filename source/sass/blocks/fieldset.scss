@@ -121,7 +121,7 @@
   }
 }
 
-.fieldset--poi.fieldset__list {
+.fieldset--poi .fieldset__list {
   @media (min-width: $tablet-width) {
     column-gap: 0;
     padding: 0 50px 0 84px;
