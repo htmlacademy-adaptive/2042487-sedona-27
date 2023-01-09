@@ -57,6 +57,14 @@
     width: 23px;
     height: 23px;
   }
+
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .nav--opened .nav__wrapper {

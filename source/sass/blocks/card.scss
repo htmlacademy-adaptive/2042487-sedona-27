@@ -122,6 +122,16 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
-    padding-bottom: 41px;
+    padding-bottom: 48px;
+  }
+}
+
+.card--up .card__description {
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
   }
 }

@@ -67,6 +67,20 @@
   &::placeholder {
     color: $color-text-placeholder;
   }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 10px $color-text-menu-current;
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $color-bg-basic;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .field--iconed .field__input {
@@ -113,6 +127,14 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:active {
+    background-color: $color-control-active;
+  }
 }
 
 .field__control:checked + .field__radio::after {
@@ -121,4 +143,22 @@
 
 .field__control:checked + .field__checkbox::after {
   background-image: url("../img/icons/marker-check.svg");
+}
+
+.field__control:focus-visible + .field__radio {
+  box-shadow: 0 0 10px $color-text-menu-current;
+  outline: 0;
+}
+
+.field__control:focus-visible + .field__checkbox {
+  box-shadow: 0 0 10px $color-text-menu-current;
+  outline: 0;
+}
+
+.field__control:active + .field__radio::after {
+  opacity: 0.3;
+}
+
+.field__control:active + .field__checkbox::after {
+  opacity: 0.3;
 }

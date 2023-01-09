@@ -26,7 +26,7 @@
 
 .sublist__item::before {
   position: absolute;
-  content: "";
+  content: " ";
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -58,14 +58,15 @@
     padding: 153px 33px 64px;
   }
 
-  .sublist__item--souvenir br {
-    display: none;
+  .sublist__item--souvenir::before {
+    top: 61px;
+    left: 51%;
+    transform: translateX(-50%);
+    background-size: 85px 80px;
   }
 
-  .sublist__item--souvenir::before {
-    top: 62px;
-    left: 50%;
-    transform: translateX(-50%);
+  .sublist__item--souvenir br {
+    display: inline;
   }
 }
 
@@ -84,6 +85,18 @@
     top: 65px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .sublist__item--souvenir::before {
+    background-size: 96px 80px;
+    left: 49%;
+    top: 67px;
+  }
+
+  .sublist__item--food::before {
+    background-size: 74px 80px;
+    left: 49.5%;
+    top: 67px;
   }
 }
 

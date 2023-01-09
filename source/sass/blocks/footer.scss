@@ -19,6 +19,7 @@
   font-family: inherit;
   text-decoration: none;
   color: $color-text-basic;
+  transition: all 0.15s ease-in;
 
   &--twitter {
     text-transform: uppercase;
@@ -40,8 +41,20 @@
 
   &--main {
     @media (min-width: $tablet-width) {
-       margin: 0 17px 0 -21px;
+      margin: 0 17px 0 -21px;
     }
+  }
+
+  &:hover {
+    color: $color-basic;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-basic;
+  }
+
+  &:active {
+    color: $color-text-active;
   }
 }
 

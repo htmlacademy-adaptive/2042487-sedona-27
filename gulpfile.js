@@ -54,7 +54,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 }
 
 const copyImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src('source/img/**/*.{png,jpg,ico}')
 .pipe(gulp.dest('build/img'))
 }
 
@@ -91,6 +91,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/*.webmanifest',
 ], {
 base: 'source'
 })
