@@ -95,6 +95,25 @@
   width: 1px;
   height: 1px;
   background: $color-bg-basic;
+
+  &:checked + .field__radio::after {
+    background-image: url("../img/icons/marker-dot.svg");
+  }
+
+  &:checked + .field__checkbox::after {
+    background-image: url("../img/icons/marker-check.svg");
+  }
+}
+
+.field__control:focus-visible + .field__radio,
+.field__control:focus-visible + .field__checkbox {
+  box-shadow: 0 0 10px $color-text-menu-current;
+  outline: 0;
+}
+
+.field__control:active + .field__radio::after,
+.field__control:active + .field__checkbox::after {
+  opacity: 0.3;
 }
 
 .field__radio {
@@ -135,30 +154,4 @@
   &:active {
     background-color: $color-control-active;
   }
-}
-
-.field__control:checked + .field__radio::after {
-  background-image: url("../img/icons/marker-dot.svg");
-}
-
-.field__control:checked + .field__checkbox::after {
-  background-image: url("../img/icons/marker-check.svg");
-}
-
-.field__control:focus-visible + .field__radio {
-  box-shadow: 0 0 10px $color-text-menu-current;
-  outline: 0;
-}
-
-.field__control:focus-visible + .field__checkbox {
-  box-shadow: 0 0 10px $color-text-menu-current;
-  outline: 0;
-}
-
-.field__control:active + .field__radio::after {
-  opacity: 0.3;
-}
-
-.field__control:active + .field__checkbox::after {
-  opacity: 0.3;
 }
