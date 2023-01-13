@@ -30,6 +30,14 @@
     padding: 17px 20px 12px;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    &:active {
+      color: $color-text-mobile-menu-active;
+    }
+
+    &:hover {
+      background-color: $color-bg-mobile-menu-hover;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -37,9 +45,17 @@
     padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: $color-text-menu-hover;
+    }
+
+    &:active {
+      color: $color-text-menu-active;
+    }
   }
 
   &--current {
-    color: $color-text-basic-current;
+    color: $color-text-menu-current;
   }
 }

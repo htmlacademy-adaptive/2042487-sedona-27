@@ -107,13 +107,13 @@
   font-family: inherit;
   text-transform: uppercase;
   list-style: none;
-  padding: 31px 18px 52px;
+  padding: 31px 18px 46px;
   background-color: $color-bg-sublist;
   display: flex;
   flex-direction: column;
 
   @media (max-width: $mobile-width) {
-    gap: 30px;
+    gap: 33px;
   }
 
   @media (min-width: $tablet-width) {

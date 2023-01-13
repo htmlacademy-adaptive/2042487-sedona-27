@@ -1,35 +1,31 @@
 .card {
   font-family: inherit;
-  padding: 26px 18px 24px;
+  padding: 22px 18px 26px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
-    padding: 42px 32px;
+    padding: 52px 32px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 43px 42px;
+    padding: 63px 50px 41px;
     min-height: 256px;
   }
 
   &--primary {
-    padding: 39px 20px 38px;
+    padding: 36px 20px 38px;
     color: $color-text-secondary;
 
     @media (min-width: $tablet-width) {
-      padding: 42px 32px;
+      padding: 52px 32px 31px 30px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 50px 52px;
+      padding: 52px 51px 50px 50px;
     }
   }
-}
-
-.advantages__item--secondary .card {
-  padding-bottom: 35px;
 }
 
 .card__title {
@@ -37,7 +33,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -66,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__item--third .card__description {
-    max-width: 178px;
+    max-width: 190px;
 
     @media (min-width: $desktop-width) {
       max-width: 290px;
@@ -114,6 +110,28 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+  }
+}
+
+.card--up {
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 48px;
+  }
+}
+
+.card--up .card__description {
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
   }
 }
