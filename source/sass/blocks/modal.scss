@@ -1,18 +1,3 @@
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-  display: flex;
-  background-color: $color-bg-modal-container;
-
-  &--close {
-    display: none;
-  }
-}
-
 .modal {
   background-color: $color-bg-basic;
   width: 100%;
