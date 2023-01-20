@@ -67,6 +67,20 @@
   &::placeholder {
     color: $color-text-placeholder;
   }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 10px $color-text-menu-current;
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $color-bg-basic;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .field--iconed .field__input {
@@ -81,6 +95,25 @@
   width: 1px;
   height: 1px;
   background: $color-bg-basic;
+
+  &:checked + .field__radio::after {
+    background-image: url("../img/icons/marker-dot.svg");
+  }
+
+  &:checked + .field__checkbox::after {
+    background-image: url("../img/icons/marker-check.svg");
+  }
+}
+
+.field__control:focus-visible + .field__radio,
+.field__control:focus-visible + .field__checkbox {
+  box-shadow: 0 0 10px $color-text-menu-current;
+  outline: 0;
+}
+
+.field__control:active + .field__radio::after,
+.field__control:active + .field__checkbox::after {
+  opacity: 0.3;
 }
 
 .field__radio {
@@ -113,12 +146,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
-.field__control:checked + .field__radio::after {
-  background-image: url("../img/icons/marker-dot.svg");
-}
+  &:hover {
+    background-color: $color-input-hover;
+  }
 
-.field__control:checked + .field__checkbox::after {
-  background-image: url("../img/icons/marker-check.svg");
+  &:active {
+    background-color: $color-control-active;
+  }
 }

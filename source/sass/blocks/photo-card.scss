@@ -1,7 +1,7 @@
 .photo-card {
   display: flex;
   flex-direction: column-reverse;
-  padding: 24px 20px;
+  padding: 24px 20px 25px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -24,6 +24,6 @@
 
 .photo__item--top .photo-card__image {
   @media (min-width: $tablet-width) {
-    max-height: 400px;
+    min-height: 400px;
   }
 }

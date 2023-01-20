@@ -10,4 +10,23 @@
   line-height: 26px;
   cursor: pointer;
   display: block;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 10px $color-text-menu-current;
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $color-btn-primary-active;
+    color: $color-btn-secondary-active;
+  }
+
+  &:disabled {
+    background-color: $color-btn-disabled;
+  }
 }

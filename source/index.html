@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body class="page__body">
@@ -62,7 +64,7 @@
           </p>
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--primary">
-              <div class="advantage__wrapper card card--primary">
+              <div class="advantages__card card card--primary">
                 <h3 class="card__title">
                   Настоящий<br>&nbsp;городок
                 </h3>
@@ -105,13 +107,13 @@
                     Сувениры
                   </h4>
                   <p class="sublist__description">
-                    Не&nbsp;только китайского,<br>&nbsp;но и местного производства!
+                    Не&nbsp;только китайского, <br>&nbsp;но&nbsp;и местного производства!
                   </p>
                 </li>
               </ul>
             </li>
             <li class="advantages__item advantages__item--secondary">
-              <div class="advantage__wrapper card card--primary">
+              <div class="advantages__card card card--primary">
                 <h3 class="card__title">
                   Там есть<br>&nbsp;мост дьявола
                 </h3>
@@ -134,7 +136,7 @@
             </div>
             </li>
             <li class="advantages__item advantages__item--third">
-              <div class="advantage__wrapper card">
+              <div class="advantages__card card">
                 <h3 class="card__title">
                   Небольшая<br>&nbsp;площадь
                 </h3>
@@ -147,7 +149,7 @@
               </div>
             </li>
             <li class="advantages__item advantages__item--third">
-              <div class="advantage__wrapper card">
+              <div class="advantages__card card card--up">
                 <h3 class="card__title">
                   Красивая<br>&nbsp; дорога
                 </h3>
@@ -155,12 +157,12 @@
                   — №4 —
                 </p>
                 <p class="card__description">
-                  Ехать в&nbsp;Седону из<br>&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
+                  Ехать в&nbsp;Седону из Лас-<br>Вегаса совсем  не&nbsp;скучно!
                 </p>
               </div>
             </li>
             <li class="advantages__item advantages__item--third">
-              <div class="advantage__wrapper card">
+              <div class="advantages__card card">
                 <h3 class="card__title">
                   Мало<br>&nbsp;туристов
                 </h3>
@@ -168,7 +170,7 @@
                   — №5 —
                 </p>
                 <p class="card__description">
-                  Большинство едет в<br>&nbsp;Гранд Каньон и толпится там
+                  Большинство едет в&nbsp;Гранд Каньон и толпится там
                 </p>
               </div>
             </li>
@@ -226,7 +228,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__link link footer__link--copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="footer__link link footer__link--copyright footer__link--main" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="link__title">Разработано</span>
           <svg width="27" height="35" fill="currentColor">
             <use xlink:href="./img/sprite.svg#icon-academy"></use>

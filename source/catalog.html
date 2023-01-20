@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body class="page__body">
@@ -50,17 +52,17 @@
       <main class="gallery">
         <h1 class="visually-hidden">Седона</h1>
         <div class="gallery__hero hero hero--inner">
-          <img class="hero__image" src="./img/welcome-inner.svg" width="292" height="39"  alt="Логотип.">
+          <img class="hero__image" src="./img/welcome-inner.svg" width="229" height="39"  alt="Логотип.">
         </div>
 
-        <section class="gallary-header section">
+        <section class="gallery__header section">
           <h2 class="section__title">Фото и видео</h2>
           <p class="section__description">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+            Не&nbsp;можете решиться на&nbsp;путешествие из-за курса?<br> Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
           </p>
         </section>
 
-        <section class="gallary__photo photo">
+        <section class="gallery__photo photo">
           <h2 class="visually-hidden">
             Каталог фотографий
           </h2>
@@ -69,8 +71,8 @@
               <div class="photo-content photo-card">
                 <div class="photo-card__info info">
                   <div class="info-text-wrapper">
-                      <h3 class="info__autor">Неродные просторы</h3>
-                      <p class="info__name">Автор фото: Борис</p>
+                      <h3 class="info__title">Неродные просторы</h3>
+                      <p class="info__author">Автор фото: Борис</p>
                   </div>
                   <div class="info__like like">
                       <button class="like__button button" type="button">
@@ -89,7 +91,7 @@
                     <source type="image/webp" srcset="./img/catalog/catalog-photo1-mobile@1x.webp 1x, ./img/catalog/catalog-photo1-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo1-desktop@1x.jpg 1x, ./img/catalog/catalog-photo1-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo1-tablet@1x.jpg 1x, ./img/catalog/catalog-photo1-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" src="./img/catalog/catalog-photo1-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Дорога в пустыне." src="./img/catalog/catalog-photo1-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo1-mobile@2x.jpg 2x" width="280" height="280">
                   </picture>
                 </a>
               </div>
@@ -99,8 +101,8 @@
               <div class="photo-content photo-card">
                 <div class="photo-card__info info">
                   <div class="info-text-wrapper">
-                      <h3 class="info__autor">Местная растительность</h3>
-                      <p class="info__name">Автор фото: Сергей</p>
+                      <h3 class="info__title">Местная растительность</h3>
+                      <p class="info__author">Автор фото: Сергей</p>
                   </div>
                   <div class="info__like like">
                       <button class="like__button button" type="button">
@@ -119,7 +121,7 @@
                     <source type="image/webp" srcset="./img/catalog/catalog-photo2-mobile@1x.webp 1x, ./img/catalog/catalog-photo2-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo2-desktop@1x.jpg 1x, ./img/catalog/catalog-photo2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo2-tablet@1x.jpg 1x, ./img/catalog/catalog-photo2-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Цветищий кактус." src="./img/catalog/catalog-photo2-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo2-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Цветищий кактус." src="./img/catalog/catalog-photo2-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo2-mobile@2x.jpg 2x"  width="280" height="280">
                   </picture>
                 </a>
               </div>
@@ -129,8 +131,8 @@
               <div class="photo-content photo-card">
                 <div class="photo-card__info info">
                   <div class="info-text-wrapper">
-                      <h3 class="info__autor">Дорога на север</h3>
-                      <p class="info__name">Автор фото: Петр</p>
+                      <h3 class="info__title">Дорога на север</h3>
+                      <p class="info__author">Автор фото: Петр</p>
                   </div>
                   <div class="info__like like">
                       <button class="like__button button" type="button">
@@ -149,7 +151,7 @@
                     <source type="image/webp" srcset="./img/catalog/catalog-photo3-mobile@1x.webp 1x, ./img/catalog/catalog-photo3-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo3-desktop@1x.jpg 1x, ./img/catalog/catalog-photo3-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo3-tablet@1x.jpg 1x, ./img/catalog/catalog-photo3-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Дорога в горах." src="./img/catalog/catalog-photo3-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo3-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Дорога в горах." src="./img/catalog/catalog-photo3-mobile@1x.jpg"  srcset="./img/catalog/catalog-photo3-mobile@2x.jpg 2x"  width="280" height="280">
                   </picture>
                 </a>
               </div>
@@ -159,8 +161,8 @@
               <div class="photo-content photo-card">
                 <div class="photo-card__info info">
                   <div class="info-text-wrapper">
-                      <h3 class="info__autor">Мост дьявола</h3>
-                      <p class="info__name">Автор фото: Антон</p>
+                      <h3 class="info__title">Мост дьявола</h3>
+                      <p class="info__author">Автор фото: Антон</p>
                   </div>
                   <div class="info__like like">
                       <button class="like__button button" type="button">
@@ -179,7 +181,7 @@
                     <source type="image/webp" srcset="./img/catalog/catalog-photo4-mobile@1x.webp 1x, ./img/catalog/catalog-photo4-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-photo4-desktop@1x.jpg 1x, ./img/catalog/catalog-photo4-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/catalog/catalog-photo4-tablet@1x.jpg 1x, ./img/catalog/catalog-photo4-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" loading="lazy" alt="Мост дьявола." src="./img/catalog/catalog-photo4-mobile@1x.jpg" srcset="./img/catalog/catalog-photo4-mobile@2x.jpg 2x"  width="280" height="280" alt="Дорога в пустыне.">
+                    <img class="photo-card__image" loading="lazy" alt="Мост дьявола." src="./img/catalog/catalog-photo4-mobile@1x.jpg" srcset="./img/catalog/catalog-photo4-mobile@2x.jpg 2x"  width="280" height="280">
                   </picture>
                 </a>
               </div>
@@ -187,8 +189,8 @@
           </ul>
         </section>
 
-        <section class="gallary__video video-presentation">
-          <div class="gallery__header video-presentation__wrapper section">
+        <section class="gallery__video video-presentation">
+          <div class="gallery__header gallery__header--video-presentation section">
             <h2 class="section__title">Все еще сомневаетесь?</h2>
             <p class="section__description">
               Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они<br>&nbsp;

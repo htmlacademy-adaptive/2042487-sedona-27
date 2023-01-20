@@ -1,5 +1,5 @@
 .footer {
-  padding: 28px 18px 23px;
+  padding: 29px 18px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +19,7 @@
   font-family: inherit;
   text-decoration: none;
   color: $color-text-basic;
+  transition: all 0.15s ease-in;
 
   &--twitter {
     text-transform: uppercase;
@@ -36,6 +37,24 @@
     line-height: 21px;
     display: flex;
     gap: 10px;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      margin: 0 17px 0 -21px;
+    }
+  }
+
+  &:hover {
+    color: $color-basic;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-basic;
+  }
+
+  &:active {
+    color: $color-text-active;
   }
 }
 

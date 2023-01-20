@@ -26,7 +26,7 @@
 
 .sublist__item::before {
   position: absolute;
-  content: "";
+  content: " ";
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -41,7 +41,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: 57px;
+    top: 55px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -54,18 +54,49 @@
     padding: 158px 32px 61px;
   }
 
+  .sublist__item--souvenir {
+    padding: 153px 33px 64px;
+  }
+
+  .sublist__item--souvenir::before {
+    top: 61px;
+    left: 51%;
+    transform: translateX(-50%);
+    background-size: 85px 80px;
+  }
+
   .sublist__item--souvenir br {
-    display: none;
+    display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sublist__item {
-    padding-bottom: 83px;
+    padding: 170px 32px 71px;
   }
 
   .sublist__item--souvenir br {
     display: inline;
+  }
+
+  .sublist__item::before {
+    width: 80px;
+    height: 80px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sublist__item--souvenir::before {
+    background-size: 96px 80px;
+    left: 49%;
+    top: 67px;
+  }
+
+  .sublist__item--food::before {
+    background-size: 74px 80px;
+    left: 49.5%;
+    top: 67px;
   }
 }
 
