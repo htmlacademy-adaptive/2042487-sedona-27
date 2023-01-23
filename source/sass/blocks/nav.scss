@@ -74,7 +74,7 @@
 .nav--opened .nav__toggle {
   &::after {
     color: $color-text-secondary;
-    background-image: url("../../img/icons/icon-cross.svg");
+    background-image: url("../img/icons/icon-cross.svg");
   }
 }
 
@@ -86,7 +86,7 @@
   &::after {
     content: "";
     color: $color-basic;
-    background-image: url("../../img/icons/icon-menu.svg");
+    background-image: url("../img/icons/icon-menu.svg");
   }
 }
 
