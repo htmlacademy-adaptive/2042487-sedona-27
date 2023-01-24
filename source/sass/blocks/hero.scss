@@ -6,7 +6,7 @@
   position: relative;
 
   &--main {
-    background-image: url("../../img/welcome-bg-mobile@1x.jpg");
+    background-image: url("../img/welcome-bg-mobile@1x.jpg");
     padding: 90px 0 85px 0;
     margin-bottom: 32px;
     background-position: center;
@@ -14,25 +14,25 @@
     background-size: 901px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/welcome-bg-mobile@2x.jpg");
+      background-image: url("../img/welcome-bg-mobile@2x.jpg");
     }
   }
 
   &--inner {
     padding: 52px 0 67px 0;
     min-height: 158px;
-    background-image: url("../../img/welcome-bg-mobile-inner@1x.jpg");
+    background-image: url("../img/welcome-bg-mobile-inner@1x.jpg");
     background-size: 902px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/welcome-bg-mobile-inner@2x.jpg");
+      background-image: url("../img/welcome-bg-mobile-inner@2x.jpg");
     }
   }
 
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../../img/hero-divider.svg");
+    background-image: url("../img/hero-divider.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -46,21 +46,21 @@
     &--main {
       padding: 78px 0 90px 0;
       margin-bottom: 47px;
-      background-image: url("../../img/welcome-bg-desktop@1x.jpg");
+      background-image: url("../img/welcome-bg-desktop@1x.jpg");
       background-size: 1200px auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/welcome-bg-desktop@2x.jpg");
+        background-image: url("../img/welcome-bg-desktop@2x.jpg");
       }
     }
 
     &--inner {
       padding: 95px 0 117px 0;
-      background-image: url("../../img/welcome-bg-inner-desktop@1x.jpg");
+      background-image: url("../img/welcome-bg-inner-desktop@1x.jpg");
       background-size: 1200px auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/welcome-bg-inner-desktop@2x.jpg");
+        background-image: url("../img/welcome-bg-inner-desktop@2x.jpg");
       }
     }
   }
